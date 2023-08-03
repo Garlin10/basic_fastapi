@@ -76,7 +76,7 @@ def your_api_function(item:Item):
 ```
 
 ### How will it looks like
-Example for the basic api:
+![Email sender](images/email_sender.PNG)
 
-Example for new API-s:
+![OPC-UA_API](images/OPC-UA_API.PNG)
 
