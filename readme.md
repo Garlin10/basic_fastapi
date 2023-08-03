@@ -78,5 +78,5 @@ def your_api_function(item:Item):
 ### How will it looks like
 ![Email sender](images/email_sender.PNG)
 
-![OPC-UA_API](images/OPC-UA_ API.PNG)
+![OPC-UA_API](images/OPC-UA_API.PNG)
 
