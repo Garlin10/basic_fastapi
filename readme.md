@@ -9,8 +9,7 @@ A basic FastAPI for later usage.
   - [Installation](#installation)
 - [Running the Application](#running-the-application)
 - [Writing a New API](#writing-a-new-api)
-- [Contributing](#contributing)
-- [License](#license)
+- [How will it looks like](#how-will-it-looks-like)
 
 ## Getting Started
 
@@ -75,4 +74,9 @@ def your_api_function(item:Item):
     # Your API logic here
     return {"message": "Hello from your new API!"}
 ```
+
+### How will it looks like
+Example for the basic api:
+
+Example for new API-s:
 
