@@ -8,7 +8,7 @@ A basic FastAPI for later usage.
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Running the Application](#running-the-application)
-- [Writing a New API in FastAPI](#writing-a-new-api-in-fastapi)
+- [Writing a New API](#writing-a-new-api)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -42,3 +42,37 @@ Open a browser and insert:
 ### Running the application
 If you want to run it in the background you can use ```-d``` flag:
 ```docker-compose up --build -d```
+
+### Writing a new API
+```
+@app.get("/your_endpoint/")
+def your_api_function():
+    # Your API logic here
+    return {"message": "Hello from your new API!"}
+```
+
+If you want to get parameters from the request:
+```
+@app.get("/your_endpoint/{Value}")
+def your_api_function(Value):
+    #Then you can use Value parameter in your program
+    # Your API logic here
+    return {"message": "Hello from your new API!"}
+```
+
+Other solution:
+
+```
+#Define a class for the datas that you want to get.
+class Item(BaseModel):
+    value1: str
+    value2: bool
+    value3: str = None
+
+@app.get("/your_endpoint/")
+def your_api_function(item:Item):
+    #Then you can use item.value1, item.value2 and item.value3 as parameter in your program
+    # Your API logic here
+    return {"message": "Hello from your new API!"}
+```
+
