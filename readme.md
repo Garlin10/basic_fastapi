@@ -39,6 +39,6 @@ These instructions will guide you through setting up the project on your local m
 Open a browser and insert:
 ```[your_ip]:8000```
 
-###Running the application
+### Running the application
 If you want to run it in the background you can use ```-d``` flag:
 ```docker-compose up --build -d```
